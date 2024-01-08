@@ -3,4 +3,4 @@ prime/
 stage/
 .tox/
 *.charm
-*__pycache__
+__pycache__/
