@@ -25,9 +25,9 @@ def test_install_status(ctx, popen_mock):
     popen_mock.assert_called()
     popen_mock.assert_has_calls(
         (
-            call(['apt-get', 'update', '-y']),
-            call(['apt-get', 'install', '-y', 'nginx']),
-            call(['ufw', 'allow', 'Nginx HTTP']),
+            call(["apt-get", "update", "-y"]),
+            call(["apt-get", "install", "-y", "nginx"]),
+            call(["ufw", "allow", "Nginx HTTP"]),
         ),
-        any_order=True
+        any_order=True,
     )
